@@ -6,6 +6,12 @@
 	overflow: scroll;
 	transform: translate(-616px);
 	transition: transform 0.5s ease;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.container::-webkit-scrollbar {
+	display: none;
 }
 
 .container_open {
@@ -16,6 +22,7 @@
 	display: flex;
 	flex-shrink: 0;
 	flex-direction: column;
+	gap: 50px;
 	box-sizing: border-box;
 	width: 616px;
 	height: auto;
